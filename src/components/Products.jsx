@@ -32,7 +32,7 @@ export default function Products() {
   ];
 
   return (
-    <section className="xl:container xl:mx-auto px-4 py-16 bg-white pt-40 md:pt-10">
+    <section className="xl:container xl:mx-auto px-4 py-16 bg-white pt-10">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-5">
         {products.map((product, index) => (
           <div
@@ -55,9 +55,8 @@ export default function Products() {
               <h2 className="inline-block bg-buttonBg text-white text-base font-semibold px-4 py-2 rounded-full">
                 {product.name}
               </h2>
-              <p className="text-gray-700 text-sm md:leading-6 text-justify">
+              <p className="text-textColor md:text-base md:text-justify leading-7 text-sm md:leading-7 text-justify">
                 {product.description}
-                {/* <span className="text-blue-500 hover:underline cursor-pointer" onClick={() => product.description}> Read More</span> */}
               </p>
             </div>
           </div>

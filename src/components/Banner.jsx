@@ -23,7 +23,7 @@ export default function Banner() {
     },
   ];
   return (
-    <section className="w-full z-20 relative h-screen py-12 pt-32 after:absolute after:left-0 after:right-0 after:bg-black bg-[url('https://img.freepik.com/free-vector/ombre-blue-curve-light-blue-background_53876-173299.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="w-full z-20 relative py-20 pt-32 after:absolute after:left-0 after:right-0 after:bg-black bg-[url('https://img.freepik.com/free-vector/ombre-blue-curve-light-blue-background_53876-173299.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="xl:container xl:mx-auto px-2 flex flex-col md:flex-row items-center gap-10">
         {/* overlay  */}
         <div className="inset-0 bg-black absolute left-0 top-0 opacity-10 -z-10"></div>

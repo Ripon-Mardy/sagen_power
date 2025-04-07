@@ -13,7 +13,7 @@ const Blogs = () => {
           </h2>
         </div>
         {/* blogs  */}
-        <div className="grid grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
           {blogsData.map((post, index) => (
             <div
               key={index}

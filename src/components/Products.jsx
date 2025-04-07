@@ -55,7 +55,7 @@ export default function Products() {
               <h2 className="inline-block bg-buttonBg text-white text-base font-semibold px-4 py-2 rounded-full">
                 {product.name}
               </h2>
-              <p className="text-textColor md:text-base md:text-justify leading-7 text-sm md:leading-7 text-justify">
+              <p className="text-textColor md:text-base md:text-justify leading-6 text-sm md:leading-7 text-justify">
                 {product.description}
               </p>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Mail, Phone , MapPin  } from 'lucide-react';
+import { Mail, Phone , MapPin , PhoneCall, Clock } from 'lucide-react';
+// import { Facebook, Instagram, Linkedin, Mail, MapPin, PhoneCall, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -18,20 +19,39 @@ export default function Contact() {
             or send us a message.
           </p>
 
-          <div className="space-y-3 text-textColor">
-            <span className="flex items-center gap-2 text-sm md:text-base">
-              <Mail size={18} />
-              sagenpowerctg@gmail.com
-            </span>
-            <span className="flex items-center gap-2 text-sm md:text-base">
-              <Phone size={18} />
-              012483433434
-            </span>
-            <span className="flex items-center gap-2 text-sm md:text-base">
-              <MapPin size={18} />
-              Dhaka, Bangladesh
-            </span>
-          </div>
+          <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <Mail className="text-iconColor mt-1 flex-shrink-0" size={18} />
+                <span className="text-sm text-gray-600">
+                  <span className="block text-gray-800 font-medium mb-1">Email Us</span>
+                  sagenpowerctg@gmail.com
+                </span>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <PhoneCall className="text-iconColor mt-1 flex-shrink-0" size={18} />
+                <span className="text-sm text-gray-600">
+                  <span className="block text-gray-800 font-medium mb-1">Call Us</span>
+                  +880 1XXX-XXXXXX
+                </span>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <MapPin className="text-iconColor mt-1 flex-shrink-0" size={18} />
+                <span className="text-sm text-gray-600">
+                  <span className="block text-gray-800 font-medium mb-1">Our Location</span>
+                  Muradpur, Chittagong, Bangladesh
+                </span>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <Clock className="text-iconColor mt-1 flex-shrink-0" size={18} />
+                <span className="text-sm text-gray-600">
+                  <span className="block text-gray-800 font-medium mb-1">Business Hours</span>
+                  Open daily: 9:00 AM - 6:00 PM
+                </span>
+              </div>
+            </div>
 
           <div className="w-full h-64">
 

@@ -8,7 +8,8 @@ export default {
       },
       textColor : {
         "headingColor" : "#11218B",
-        "textColor" : "#4B5563"
+        "textColor" : "#4B5563",
+        "iconColor" : "#1e88e5",
       },
       backgroundColor : {
         "buttonBg" : "#11218B",

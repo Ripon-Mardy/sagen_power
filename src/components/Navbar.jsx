@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
+    {name : "Our Services", path : "/services"},
     { name: "Blogs", path: "/blogs" },
   ];
 
@@ -32,9 +33,12 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
           <img src={sagenLogo} alt="sagenpower" className="w-12" />
-          <span className="text-headingColor font-semibold text-2xl -tracking-tighter">
-            Sagen Power
+          <div className="flex flex-col">
+          <span className="text-headingColor font-semibold leading-6 text-2xl -tracking-tighter">
+            SAGEN POWER
           </span>
+          <span className="text-xs text-textColor -tracking-tighter">Quality service to our commitment</span>
+          </div>
         </a>
 
         {/* Desktop Menu */}
@@ -49,9 +53,15 @@ export default function Navbar() {
               <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-buttonBgHover transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-          <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
-            Contact Me
-          </button>
+          <a
+            href="https://wa.me/8801854667543"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
+              Contact Me
+            </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}

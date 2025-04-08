@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
 import BlogDetails from "./pages/BlogDetails";
+import Ourservices from "./components/Ourservices";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails/>} />
+          <Route path="/services" element={<Ourservices/>} />
         </Routes>
         <Footer />
       </Router>

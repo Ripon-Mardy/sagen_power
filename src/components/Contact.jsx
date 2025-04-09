@@ -43,6 +43,14 @@ export default function Contact() {
                   Muradpur, Chittagong, Bangladesh
                 </span>
               </div>
+
+              <div className="flex items-start space-x-3">
+                <MapPin className="text-iconColor mt-1 flex-shrink-0" size={18} />
+                <span className="text-sm text-gray-600">
+                  <span className="block text-gray-800 font-medium mb-1">Our Location (Dhaka office) </span>
+                  Section - 12, Black - C, Road - 11, House -6, pallabi, Mirpur, Dhaka- 1216.
+                </span>
+              </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="text-iconColor mt-1 flex-shrink-0" size={18} />

@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
 import BlogDetails from "./pages/BlogDetails";
 import Ourservices from "./components/Ourservices";
+import BannerBottom from "./components/BannerBottom";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             element={
               <>
                 <Banner />
+                <BannerBottom/>
                 <Products />
               </>
             }

@@ -5,39 +5,30 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-    {name : "Our Services", path : "/services"},
+    { name: "Our Services", path: "/services" },
     { name: "Blogs", path: "/blogs" },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <nav
-      className={`w-full fixed top-0 left-0 transition-all backdrop-blur-md duration-300 z-50 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
+      className={`w-full fixed transition-all bg-white shadow-md duration-300 z-50 `}
     >
       <div className="xl:container xl:mx-auto px-2 py-3 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
           <img src={sagenLogo} alt="sagenpower" className="w-12" />
           <div className="flex flex-col">
-          <span className="text-headingColor font-semibold leading-6 text-2xl -tracking-tighter">
-            SAGEN POWER
-          </span>
-          <span className="text-xs text-textColor -tracking-tighter">Quality service to our commitment</span>
+            <span className={`text-headingColor font-bold leading-6 text-2xl -tracking-tighter `}>
+              SAGEN POWER
+            </span>
+            <span className={`text-xs text-textColor font-semibold -tracking-tighter  `}>
+              Quality service to our commitment
+            </span>
           </div>
         </a>
 
@@ -47,7 +38,7 @@ export default function Navbar() {
             <Link
               key={index}
               to={link.path}
-              className="text-[#333333] hover:text-blue-600 text-base font-normal transition duration-300 relative group"
+              className={`text-[#333333] hover:text-blue-600 text-base font-semibold transition duration-300 relative group `}
             >
               {link.name}
               <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-buttonBgHover transition-all duration-300 group-hover:w-full"></span>
@@ -92,13 +83,13 @@ export default function Navbar() {
             <a
               key={index}
               href={link.path}
-              className="text-[#333333] font-normal hover:text-blue-600 text-sm transition"
+              className="text-[#333333] font-semibold hover:text-blue-600 text-sm transition"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <button className="bg-blue-600 text-white px-4 text-sm py-2 rounded-full shadow hover:bg-blue-700 transition">
+          <button className="bg-blue-600 font-semibold text-white px-4 text-sm py-2 rounded-full shadow hover:bg-blue-700 transition">
             Contact Me
           </button>
         </div>

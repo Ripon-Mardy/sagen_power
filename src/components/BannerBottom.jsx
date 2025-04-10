@@ -31,7 +31,7 @@ const BannerBottom = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-4 xl:gap-8 w-full'>
                 {bannerBottomData.map((item, index) => (
                     <div key={index} className='flex items-center gap-5'>
-                        <img className='bg-gray-200 p-2 w-20 h-20 object-cover rounded-md' src={item?.image} alt={item?.title} />
+                        <img className='bg-gray-200 p-2 w-16 h-16 md:w-20 md:h-20 object-cover rounded-md' src={item?.image} alt={item?.title} />
                         <div className='space-y-2'>
                             <h2 className='text-headingColor font-bold text-xl'> {item?.title} </h2>
                             <p className='text-textColor text-sm md:text-base'> {item?.content} </p>

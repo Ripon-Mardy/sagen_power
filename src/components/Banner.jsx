@@ -43,7 +43,7 @@ export default function Banner() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{
-          backgroundImage: "url('../../public/images/BannerImage/bg1.webp')",
+          backgroundImage: "url('/images/BannerImage/bg1.webp')",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-10"></div>

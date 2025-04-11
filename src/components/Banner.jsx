@@ -61,7 +61,7 @@ export default function Banner() {
             <h2 className="text-white font-semibold text-lg">
               We provide professional Power services
             </h2>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight">
+            <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold text-white leading-tight">
               Sagen Power
             </h1>
             <p className="mt-4 text-white max-w-md mx-auto lg:mx-0">

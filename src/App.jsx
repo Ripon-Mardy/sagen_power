@@ -10,6 +10,10 @@ import Blogs from "./components/Blogs";
 import BlogDetails from "./pages/BlogDetails";
 import Ourservices from "./components/Ourservices";
 import BannerBottom from "./components/BannerBottom";
+import Services from "./components/Services";
+import WorkTogether from "./components/WorkTogether";
+import ClientsCounts from "./components/ClientsCounts";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -23,14 +27,21 @@ function App() {
               <>
                 <Banner />
                 <BannerBottom/>
-                <Products />
+                <Services/>
+                <WorkTogether/>
               </>
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={
+            <>
+            <About />
+            <ClientsCounts/>
+            </>
+            } />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails/>} />
+          <Route path="/gallery" element={<Gallery/>} />
           <Route path="/services" element={<Ourservices/>} />
         </Routes>
         <Footer />

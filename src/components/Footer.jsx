@@ -1,5 +1,5 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, PhoneCall, Clock } from "lucide-react";
-// import Image from "next/image";
+import { Facebook, Mail, MapPin, PhoneCall, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import sagenPower from "../../public/images/logo/logo.png";
 
 export default function Footer() {
@@ -16,35 +16,20 @@ export default function Footer() {
                 alt="Sagen Power"
                 width={100}
                 height={40}
-                className="mb-5"
+                className="mb-3"
               />
             </div>
-            <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               Providing premium power backup & voltage control systems. We ensure quality after-sales service and deliver top solutions to meet your power needs. Open every day for your convenience.
             </p>
-            <div className="mt-auto flex items-center space-x-4">
               <a 
-                href="#" 
-                className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-all duration-300"
+                href="https://www.facebook.com/profile.php?id=61569423832493"
+                target="_blank" 
+                className="bg-blue-600 hover:bg-blue-700 w-fit mt-2 text-white p-2 rounded-full transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
-              <a 
-                href="#" 
-                className="bg-pink-600 hover:bg-pink-700 text-white p-2 rounded-full transition-all duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram size={18} />
-              </a>
-              <a 
-                href="#" 
-                className="bg-blue-800 hover:bg-blue-900 text-white p-2 rounded-full transition-all duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Column 2: Contact Us */}
@@ -63,7 +48,7 @@ export default function Footer() {
                 <PhoneCall className="text-iconColor mt-1 flex-shrink-0" size={18} />
                 <span className="text-sm text-gray-600">
                   <span className="block text-gray-800 font-medium mb-1">Call Us</span>
-                  +880 1XXX-XXXXXX
+                  +880 1854667543
                 </span>
               </div>
               
@@ -98,29 +83,19 @@ export default function Footer() {
             <h2 className="text-xl font-bold mb-6 text-gray-800 border-b pb-2">Quick Links</h2>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
+                <Link to={'/services'} className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
                   <span className="mr-2">›</span> Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
+                <Link to={'/about'} className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
                   <span className="mr-2">›</span> About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
-                  <span className="mr-2">›</span> Products
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
+                <Link to={'/contact'} className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
                   <span className="mr-2">›</span> Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 flex items-center">
-                  <span className="mr-2">›</span> Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

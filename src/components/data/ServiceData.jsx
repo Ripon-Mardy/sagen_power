@@ -7,37 +7,37 @@ import solar from "../../../public/images/services/solar.jpeg";
 const serviceData = [
   {
     id: "1",
-    name: "Online UPS",
+    name: "Online UPS – Reliable Power Protection",
     description:
-      "Natural disaters such as typhoons and lighting strikes as well as power outages and instantaneous boltage drops due to sudden accidents can lead to malfunctions of software based machinery and precision instruments. Sagen Power high-effciency online UPS system help to protect critical customer systems and data from power trubles while at the same time helping to improve the global environment by reducing carbon dioxide emissions. ",
+      "Sudden power disruptions caused by natural disasters such as typhoons, lightning strikes, or unexpected voltage drops can seriously damage sensitive equipment and software-based systems. The KSTAR Online UPS, offered by Sagen Power, delivers high-efficiency, uninterrupted power supply to safeguard your critical systems and valuable data.",
     image: OnlineUPS,
   },
   {
     id: "2",
-    name: "Inverter",
+    name: "Power Guard Inverter – Reliable Energy Conversion",
     description:
-      "Based on the lasted theory and technology of motor running and control, powertran inverter a new high performance vector control prequency inerter through decoupling the motor flux current and torque current it can achieve high rapid response and high accurate torque control gain high precision with ore wider range control in speed control and torque control as well.",
+      "The Power Guard Inverter is engineered to provide uninterrupted power supply by efficiently converting DC power into stable AC power for your equipment. Perfect for both residential and industrial applications, this inverter ensures a smooth and continuous power flow during blackouts and voltage fluctuations.",
     image: Inverter,
   },
   {
     id: "3",
-    name: "Automatic Voltage Regulator",
+    name: "SAKO SBW-120KVA Automatic Voltage Regulator",
     description:
-      "TNS Series full automatic compensated power voltage stablizer applicant to when the power network voltage fluctuations or the load current varies it can keep output voltage in steady slate automatically it has advantages of large capacity high effciency, No wave distortion, stable voltage adjustment and suitablity. The input voltage output voltage and power capacity can be customized as your requirements",
+      "The SAKO SBW-120KVA Automatic Voltage Regulator ensures a stable and consistent voltage supply for your sensitive equipment and industrial systems. It is designed to correct voltage fluctuations in real time, protecting your machines from potential damage due to under-voltage or over-voltage conditions.",
     image: AutomaticVoltageRegulator,
   },
   {
     id: "4",
-    name: "Battery",
+    name: "Industrial Backup Battery",
     description:
-      "Sagen Power deep cycle pdc range is purpose built for those applications which require regular and consistent cycling ( change and dis-charge). commonly called deep cycling the oversized negative plates and a specialized paste formulation of the pdc can provide constant power for longer periods of time without shortening the life of the battery typical applications include weekend or holiday homes with large elctrical loads medium solar systems for industrial",
+      "Our high-performance industrial batteries are engineered to provide reliable backup power for a wide range of applications including UPS systems, solar setups, telecommunication systems, and more. Built with advanced technology, these batteries ensure long service life, high energy density, and consistent performance even in demanding environments.",
     image: Battery,
   },
   {
     id: "5",
-    name: "Solar System",
+    name: "Complete Solar Power System",
     description:
-      "Our high-efficiency solar panels are designed to deliver maximum energy output in both residential and commercial settings. Built with advanced mono-crystalline technology, these panels offer superior performance even in low-light environments. The durable frame and anti-reflective glass ensure long-lasting reliability, making them ideal for rooftops, off-grid cabins, and large-scale solar installations.",
+      "Sagen Power provides high-quality Solar Power Systems tailored for homes, businesses, and industries. Our systems offer reliable, eco-friendly energy solutions that reduce electricity costs while supporting a greener future. We handle everything from installation to after-sales service, ensuring long-term performance and satisfaction.",
     image: solar,
   },
 ];

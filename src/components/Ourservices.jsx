@@ -5,8 +5,8 @@ const Ourservices = () => {
   return (
     <>
       <section className="xl:container xl:mx-auto px-2 pt-20 py-20">
-        {/* <h2 className='text-center  text-4xl font-bold text-headingColor'>Our Services</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 items-center justify-center">
+        <h2 className='text-center mt-10 text-4xl font-bold text-headingColor'>Our Services</h2>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 items-center justify-center">
           <h2 className="text-center font-bold text-headingColor text-4xl">
             What We Do
           </h2>
@@ -22,7 +22,7 @@ const Ourservices = () => {
               asperiores, officiis repellat molestias voluptates molestiae id!
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* services  */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">

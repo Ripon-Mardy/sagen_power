@@ -8,9 +8,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
     { name: "Our Services", path: "/services" },
+    {name : "Gallery ", path : "/gallery "},
     { name: "Blogs", path: "/blogs" },
   ];
 
@@ -33,7 +34,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-12">
+        <div className="hidden xl:flex items-center gap-12">
           {navLinks.map((link, index) => (
             <Link
               key={index}
@@ -50,13 +51,13 @@ export default function Navbar() {
             rel="noopener noreferrer"
           >
             <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
-              Contact Me
+              Contact Us
             </button>
           </a>
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -65,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-screen w-[70%] bg-white z-50 shadow-lg transform transition-transform duration-300 ${
+        className={`xl:hidden fixed top-0 right-0 h-screen w-[70%] bg-white z-50 shadow-lg transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -89,9 +90,15 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="bg-blue-600 font-semibold text-white px-4 text-sm py-2 rounded-full shadow hover:bg-blue-700 transition">
-            Contact Me
-          </button>
+          <a
+            href="https://wa.me/8801854667543"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
 

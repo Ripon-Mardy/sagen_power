@@ -7,7 +7,7 @@ const Services = () => {
     <>
     <section>
         <div className='xl:container xl:mx-auto px-2 py-10'>
-            <h2 className='text-xl md:text-4xl font-semibold text-headingColor md:max-w-lg md:mx-auto text-center'>Our awesome services to give you success</h2>
+            <h2 className='text-3xl md:text-4xl font-semibold text-headingColor md:max-w-lg md:mx-auto text-center'>Our awesome services to give you success</h2>
             {/* services  */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             {serviceData.map((item, index) => (

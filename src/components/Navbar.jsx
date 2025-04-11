@@ -81,14 +81,14 @@ export default function Navbar() {
 
         <div className="flex flex-col px-6 py-4 gap-6">
           {navLinks.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href={link.path}
+              to={link.path}
               className="text-[#333333] font-semibold hover:text-blue-600 text-sm transition"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <a
             href="https://wa.me/8801854667543"

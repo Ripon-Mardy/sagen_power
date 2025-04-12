@@ -2,7 +2,6 @@ import React from 'react'
 import serviceData from './data/ServiceData'
 
 const Services = () => {
-    console.log('services Data', serviceData)
   return (
     <>
     <section>

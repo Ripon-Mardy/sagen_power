@@ -8,7 +8,7 @@ const BannerBottom = () => {
         {
             "id" : "1",
             "title" : "Highly Expert Team",
-            "content" : "We provide the most responsive and functional IT design",
+            "content" : "We provide the most responsive and functional power service",
             "image" : teamIcon
         },
         {

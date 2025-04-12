@@ -56,7 +56,7 @@ export default function Contact() {
                 <span className="block text-gray-800 font-medium mb-1">
                   Call Us
                 </span>
-                +880 1XXX-XXXXXX
+                +880 1854667543
               </span>
             </div>
 
@@ -115,7 +115,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full text-sm md:text-base px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full text-sm md:text-base px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
               />
             </div>
             <div>
@@ -124,7 +124,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="you@example.com"
-                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
               />
             </div>
             <div>
@@ -135,7 +135,7 @@ export default function Contact() {
                 rows="4"
                 name="message"
                 placeholder="Your message..."
-                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
               ></textarea>
             </div>
             <button

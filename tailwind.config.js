@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-        roboto : ['Roboto', 'sans-serif'],
+        openSans : ["Open Sans"],
+        lora : ["Lora"]
       },
       textColor : {
         "headingColor" : "#11218B",

@@ -17,7 +17,7 @@ import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="font-roboto">
+    <div className="font-openSans">
       <Router>
         <Navbar />
         <Routes>

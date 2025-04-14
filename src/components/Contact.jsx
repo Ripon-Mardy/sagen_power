@@ -1,21 +1,28 @@
-import React from "react";
-import { Mail, Phone, MapPin, PhoneCall, Clock } from "lucide-react";
-
-import emailjs from "emailjs-com";
+import React, { useRef } from "react";
+import { Mail, PhoneCall, MapPin, Clock } from "lucide-react";
+import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Contact() {
+  const form = useRef(); 
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(fromJSON.current).then(
+    emailjs.sendForm(
+      "service_hbf3kqf",        // ✅ Your service ID
+      "template_47pgt7e",       // ✅ Your template ID (update if different)
+      form.current,             // ✅ Pass the ref here
+      "M1hoM9fnO-GC5RnNA"       // ✅ Your public key
+    ).then(
       (result) => {
-        console.log("result", result.text);
-        alert("message send successfully");
-        fromJSON.current.reset();
+        console.log("Message sent:", result.text);
+        alert("✅ Message sent to Gmail!");
+        form.current.reset(); // Optionally reset form after success
       },
       (error) => {
-        console.log(error.text);
-        alert("Failed to send message. try again");
+        console.error("Failed to send:", error.text);
+        alert("❌ Failed to send. Try again!");
       }
     );
   };
@@ -26,7 +33,7 @@ export default function Contact() {
       id="contact"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* Left Side: Info + Map */}
+        {/* Left Side: Info */}
         <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-headingColor">
             Get in Touch
@@ -52,12 +59,15 @@ export default function Contact() {
                 className="text-iconColor mt-1 flex-shrink-0"
                 size={18}
               />
-              <span className="text-sm text-gray-600">
+              <div className="text-sm text-gray-600">
                 <span className="block text-gray-800 font-medium mb-1">
                   Call Us
                 </span>
-                +880 1854667543
-              </span>
+                <div className="flex flex-col gap-2">
+                <a href="tel:+880 1854667543" className="hover:underline">+880 1854667543</a>
+                <a href="tel:+880 1832359227" className="hover:underline">+880 1832359227</a>
+                </div>
+              </div>
             </div>
 
             <div className="flex items-start space-x-3">
@@ -74,10 +84,10 @@ export default function Contact() {
               <MapPin className="text-iconColor mt-1 flex-shrink-0" size={18} />
               <span className="text-sm text-gray-600">
                 <span className="block text-gray-800 font-medium mb-1">
-                  Our Location (Dhaka office){" "}
+                  Our Location (Dhaka office)
                 </span>
-                Section - 12, Black - C, Road - 11, House -6, pallabi, Mirpur,
-                Dhaka- 1216.
+                Section - 12, Block - C, Road - 11, House - 6, Pallabi, Mirpur,
+                Dhaka - 1216.
               </span>
             </div>
 
@@ -98,7 +108,7 @@ export default function Contact() {
               className="w-full h-full border border-gray-300 rounded-sm"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34059.66108959588!2d91.80696746788797!3d22.368576650182526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd883de5d7c91%3A0xf7af0db5aecdf45b!2sMuradpur%2C%20Chittagong!5e1!3m2!1sen!2sbd!4v1743845022318!5m2!1sen!2sbd"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
@@ -108,14 +118,16 @@ export default function Contact() {
           <h3 className="text-2xl font-semibold text-headingColor">
             Contact Form
           </h3>
-          <form className="space-y-4" onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+            <ToastContainer/>
             <div>
               <label className="block text-sm text-textColor mb-1">Name</label>
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full text-sm md:text-base px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
@@ -124,7 +136,8 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="you@example.com"
-                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
@@ -132,15 +145,16 @@ export default function Contact() {
                 Message
               </label>
               <textarea
-                rows="4"
                 name="message"
+                rows="4"
                 placeholder="Your message..."
-                className="w-full px-4 py-2 text-sm md:text-base border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-buttonBg text-white py-2 text-sm md:text-base rounded hover:bg-buttonBgHover transition"
+              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
             >
               Send Message
             </button>

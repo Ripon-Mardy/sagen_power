@@ -38,7 +38,7 @@ function App() {
             <ClientsCounts/>
             </>
             } />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails/>} />
           <Route path="/gallery" element={<Gallery/>} />

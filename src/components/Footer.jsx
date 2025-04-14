@@ -48,7 +48,11 @@ export default function Footer() {
                 <PhoneCall className="text-iconColor mt-1 flex-shrink-0" size={18} />
                 <span className="text-sm text-gray-600">
                   <span className="block text-gray-800 font-medium mb-1">Call Us</span>
-                  +880 1854667543
+                  <div className="flex flex-col gap-2">
+                    <a href="tel:+880 1854667543" className="hover:underline">+880 1854667543</a>
+                    <a href="tel:+880 1832359227" className="hover:underline">+880 1832359227</a>
+                  </div>
+                  
                 </span>
               </div>
               

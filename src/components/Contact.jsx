@@ -6,6 +6,10 @@ import { toast, ToastContainer } from "react-toastify";
 export default function Contact() {
   const form = useRef(); 
 
+  const sucessfully = () => {
+
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,12 +21,12 @@ export default function Contact() {
     ).then(
       (result) => {
         console.log("Message sent:", result.text);
-        alert("✅ Message sent to Gmail!");
+        toast('Send message sucessfully')
         form.current.reset(); // Optionally reset form after success
       },
       (error) => {
         console.error("Failed to send:", error.text);
-        alert("❌ Failed to send. Try again!");
+        toast('Message not send')
       }
     );
   };

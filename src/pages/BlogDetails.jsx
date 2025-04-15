@@ -45,7 +45,7 @@ const BlogDetails = () => {
   }
 
   return (
-    <section className="xl:container xl:mx-auto px-4 pt-16 pb-12 md:pt-20 md:pb-16">
+    <section className="xl:container xl:mx-auto px-4 pt-28 pb-12 md:pt-20 md:pb-16">
       <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
         {/* Back button */}
         <button 

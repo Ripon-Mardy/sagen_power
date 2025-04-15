@@ -6,10 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 export default function Contact() {
   const form = useRef(); 
 
-  const sucessfully = () => {
-
-  }
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,12 +16,10 @@ export default function Contact() {
       "M1hoM9fnO-GC5RnNA"       // ✅ Your public key
     ).then(
       (result) => {
-        console.log("Message sent:", result.text);
         toast('Send message sucessfully')
         form.current.reset(); // Optionally reset form after success
       },
       (error) => {
-        console.error("Failed to send:", error.text);
         toast('Message not send')
       }
     );
@@ -68,7 +62,7 @@ export default function Contact() {
                   Call Us
                 </span>
                 <div className="flex flex-col gap-2">
-                <a href="tel:+880 1854667543" className="hover:underline">+880 1854667543</a>
+                <a href="tel:+880 1854667543" className="hover:underline">+880 18722298765</a>
                 <a href="tel:+880 1832359227" className="hover:underline">+880 1832359227</a>
                 </div>
               </div>

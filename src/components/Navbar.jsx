@@ -25,7 +25,7 @@ export default function Navbar() {
           <img src={sagenLogo} alt="sagenpower" className="w-12" />
           <div className="flex flex-col">
             <span className={`text-headingColor font-bold leading-6 text-2xl -tracking-tighter `}>
-              SAGEN POWER
+              Sagen Power
             </span>
             <span className={`text-xs text-textColor font-semibold -tracking-tighter  `}>
               Quality service to our commitment
@@ -50,9 +50,9 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
-              Contact Us
-            </button>
+            <a href="tel:+880 1832359227" className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
+              Call Us
+            </a>
           </a>
         </div>
 

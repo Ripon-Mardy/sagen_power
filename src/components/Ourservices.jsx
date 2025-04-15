@@ -30,9 +30,13 @@ const Ourservices = () => {
               {/* Service Content */}
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
+                  {item.capacity === '' ? (
+                    ''
+                  ) : (
+                    <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
                     {item.capacity}
                   </span>
+                  )}
                   {item.brand === "" ? (
                     ""
                   ) : (

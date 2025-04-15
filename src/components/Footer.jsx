@@ -49,7 +49,7 @@ export default function Footer() {
                 <span className="text-sm text-gray-600">
                   <span className="block text-gray-800 font-medium mb-1">Call Us</span>
                   <div className="flex flex-col gap-2">
-                    <a href="tel:+880 1854667543" className="hover:underline">+880 1854667543</a>
+                    <a href="tel:+880 1854667543" className="hover:underline">+880 18722298765</a>
                     <a href="tel:+880 1832359227" className="hover:underline">+880 1832359227</a>
                   </div>
                   

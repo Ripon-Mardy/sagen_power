@@ -93,7 +93,7 @@ export default function Navbar() {
           ))}
           <a
             href="tel:+8801832359227"
-            className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300"
+            className="bg-buttonBg font-normal w-fit text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300"
           >
             Call Us
           </a>

@@ -62,8 +62,8 @@ export default function Contact() {
                   Call Us
                 </span>
                 <div className="flex flex-col gap-2">
-                <a href="tel:+880 1854667543" className="hover:underline">+880 18722298765</a>
-                <a href="tel:+880 1832359227" className="hover:underline">+880 1832359227</a>
+                <a href="tel:+880 1854667543" className="hover:underline">+8801872229865</a>
+                <a href="tel:+880 1832359227" className="hover:underline">+8801832359227</a>
                 </div>
               </div>
             </div>

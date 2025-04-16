@@ -94,10 +94,7 @@ export default function Banner() {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    fill
-                    // sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                     className="object-cover rounded-lg w-full h-52"
-                    priority={index < 2}
                   />
                 </motion.div>
               ))}

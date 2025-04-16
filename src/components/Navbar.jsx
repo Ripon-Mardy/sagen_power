@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/contact" },
     { name: "Our Services", path: "/services" },
-    {name : "Gallery ", path : "/gallery "},
+    { name: "Gallery ", path: "/gallery" },
     { name: "Blogs", path: "/blogs" },
   ];
 
@@ -24,10 +24,14 @@ export default function Navbar() {
         <a href="/" className="flex items-center gap-2">
           <img src={sagenLogo} alt="sagenpower" className="w-12" />
           <div className="flex flex-col">
-            <span className={`text-headingColor font-bold leading-6 text-2xl -tracking-tighter `}>
+            <span
+              className={`text-headingColor font-bold leading-6 text-2xl -tracking-tighter `}
+            >
               Sagen Power
             </span>
-            <span className={`text-xs text-textColor font-semibold -tracking-tighter  `}>
+            <span
+              className={`text-xs text-textColor font-semibold -tracking-tighter  `}
+            >
               Quality service to our commitment
             </span>
           </div>
@@ -46,13 +50,10 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/8801854667543"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+8801832359227"
+            className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300"
           >
-            <a href="tel:+880 1832359227" className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
-              Call Us
-            </a>
+            Call Us
           </a>
         </div>
 
@@ -91,13 +92,10 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/8801854667543"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+8801832359227"
+            className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300"
           >
-            <button className="bg-buttonBg font-normal text-base text-white px-5 py-2 rounded-full shadow hover:bg-buttonBgHover transition duration-300">
-              Contact Us
-            </button>
+            Call Us
           </a>
         </div>
       </div>

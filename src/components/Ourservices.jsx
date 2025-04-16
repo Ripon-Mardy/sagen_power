@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import serviceData from "./data/ServiceData";
 import ServiceSlider from "./ServiceSlider";
+import { Check } from 'lucide-react';
 
 const Ourservices = () => {
   return (
@@ -55,6 +56,23 @@ const Ourservices = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-14">
+          <h2 className="text-3xl text-headingColor font-bold">Our products and services</h2>
+          <ul className="space-y-3 mt-5">
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Ture Online UPS</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Off-Line UPS</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>IPS</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>AVR</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Industrial Stablizer</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Inverter</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Battery</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Battery Charger</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Solar Inverter</li>
+          </ul>
+        </div>
+
+
       </div>
     </section>
   );

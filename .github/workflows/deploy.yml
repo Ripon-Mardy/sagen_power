@@ -23,7 +23,7 @@ jobs:
           npm run build
 
       - name: 📤 Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses:  SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           server: daisy-us-wz2.hostever.com
           username:  sagenpow

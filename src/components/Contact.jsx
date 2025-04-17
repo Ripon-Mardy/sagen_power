@@ -119,7 +119,7 @@ export default function Contact() {
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <ToastContainer/>
             <div>
-              <label className="block text-sm text-textColor mb-1">Name</label>
+              <label className="block text-sm text-textColor mb-1">Name *</label>
               <input
                 type="text"
                 name="name"

@@ -24,7 +24,7 @@ const serviceData = [
       "Natural disasters such as typhoons and lightning strikes as well as power outage and instantaneous voltage drops due to sudden accidents can lead to malfunctions of software based machinery and precision instruments. Sagen power  high -efficiency online ups system help to protect critical customer systems and data from power troubles while at the same time helping to improve the global environment by reducing carbon dioxide emissions.",
     image: [OnlineUPS1, OnlineUPS2, OnlineUPS3, OnlineUPS4],
     capacity: "1 KVA - 500 KVA",
-    brand: "Kstar",
+    brand:["Kstar", " , ", "Zigor"],
   },
   {
     id: "2",

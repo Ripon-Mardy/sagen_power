@@ -129,7 +129,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label className="block text-sm text-textColor mb-1">Email</label>
+              <label className="block text-sm text-textColor mb-1">Email *</label>
               <input
                 type="email"
                 name="email"
@@ -140,7 +140,7 @@ export default function Contact() {
             </div>
             <div>
               <label className="block text-sm text-textColor mb-1">
-                Message
+                Message *
               </label>
               <textarea
                 name="message"

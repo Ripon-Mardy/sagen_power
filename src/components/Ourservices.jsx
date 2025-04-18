@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import serviceData from "./data/ServiceData";
 import ServiceSlider from "./ServiceSlider";
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 
 const Ourservices = () => {
   return (
@@ -31,19 +31,21 @@ const Ourservices = () => {
               {/* Service Content */}
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center justify-between">
-                  {item.capacity === '' ? (
-                    ''
+                  {item.capacity === "" ? (
+                    ""
                   ) : (
                     <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
-                    {item.capacity}
-                  </span>
+                      {item.capacity}
+                    </span>
                   )}
                   {item.brand === "" ? (
                     ""
                   ) : (
-                    <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
-                      {item?.brand}
-                    </span>
+                    <div className="space-x-2">
+                      <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
+                        {item?.brand}
+                      </span>
+                    </div>
                   )}
                 </div>
                 <span className="inline-block w-fit bg-buttonBg text-white text-sm font-medium px-4 py-2 rounded-full mb-4 mt-4">
@@ -58,21 +60,48 @@ const Ourservices = () => {
         </div>
 
         <div className="mt-14">
-          <h2 className="text-3xl text-headingColor font-bold">Our products and services</h2>
+          <h2 className="text-3xl text-headingColor font-bold">
+            Our products and services
+          </h2>
           <ul className="space-y-3 mt-5">
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Ture Online UPS</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Off-Line UPS</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>IPS</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>AVR</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Industrial Stablizer</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Inverter</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Battery</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Battery Charger</li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold"><Check size={20} className="text-headingColor font-bold"/>Solar Inverter</li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Ture Online UPS
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Off-Line UPS
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              IPS
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              AVR
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Industrial Stablizer
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Inverter
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Battery
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Battery Charger
+            </li>
+            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
+              <Check size={20} className="text-headingColor font-bold" />
+              Solar Inverter
+            </li>
           </ul>
         </div>
-
-
       </div>
     </section>
   );

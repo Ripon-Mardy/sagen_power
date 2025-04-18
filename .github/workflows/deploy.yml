@@ -1,32 +1,33 @@
-name: 🚀 Deploy React to Hostever FTP
+name: 🚀 Deploy React App to Hostever via FTP
 
 on:
   push:
     branches:
-      - main  # or your main branch name
+      - main  # 👈 change if your branch is not 'main'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: 📥 Checkout code
-        uses: actions/checkout@v2
 
-      - name: 🔧 Install Node.js
-        uses: actions/setup-node@v2
+    steps:
+      - name: 📥 Clone Repo
+        uses: actions/checkout@v3
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: 🛠️ Install Dependencies & Build
+      - name: 📦 Install Dependencies & Build React App
         run: |
           npm install
           npm run build
 
-      - name: 📤 Deploy via FTP
-        uses:  SamKirkland/FTP-Deploy-Action@4.3.4
+      - name: 📤 Deploy to Hostever via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          server: daisy-us-wz2.hostever.com
-          username:  sagenpow
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build
-          server-dir: /public_html/
+          server-dir: /public_html/  # 👈 adjust if your hosting folder is different

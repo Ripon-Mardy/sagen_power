@@ -60,7 +60,7 @@ export default function Footer() {
                 <MapPin className="text-iconColor mt-1 flex-shrink-0" size={18} />
                 <span className="text-sm text-gray-600">
                   <span className="block text-gray-800 font-medium mb-1">Our Location</span>
-                  Muradpur, Chittagong, Bangladesh
+                  1710, Sofi Manjil, Bibirhat Kacha Bazar, Hathazari Road Panchlaish, Chattogram
                 </span>
               </div>
 

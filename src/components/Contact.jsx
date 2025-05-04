@@ -74,7 +74,7 @@ export default function Contact() {
                 <span className="block text-gray-800 font-medium mb-1">
                   Our Location
                 </span>
-                Muradpur, Chittagong, Bangladesh
+                1710, Sofi Manjil, Bibirhat Kacha Bazar, Hathazari Road Panchlaish, Chattogram
               </span>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import serviceData from "./data/ServiceData";
 import ServiceSlider from "./ServiceSlider";
 import { Check } from "lucide-react";
@@ -13,44 +13,53 @@ const Ourservices = () => {
             Our Awesome Services
           </h2>
           <p className="text-textColor text-lg max-w-2xl mx-auto">
-            Tailored solutions designed to give your business the competitive
-            edge and drive success
+            Tailored solutions designed to give your business the competitive edge and drive success.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 h-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {serviceData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md transition-all overflow-hidden duration-300 hover:shadow-xl border border-gray-100 flex flex-col h-full"
+              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full"
             >
-              {/* Service Image */}
+              {/* Image Slider */}
               <ServiceSlider images={item.image} />
 
-              {/* Service Content */}
+              {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-between">
-                  {item.capacity === "" ? (
-                    ""
-                  ) : (
-                    <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
+                <div className="flex justify-between items-start mb-4">
+                  {/* Capacity */}
+                  {item.capacity && (
+                    <span className="text-xs bg-blue-100 text-blue-700 font-medium px-2 py-1 rounded-md">
                       {item.capacity}
                     </span>
                   )}
-                  {item.brand === "" ? (
-                    ""
-                  ) : (
-                    <div className="space-x-2">
-                      <span className="text-xs bg-gray-100 p-2 px-4 w-fit font-semibold rounded-md">
-                        {item?.brand}
-                      </span>
+
+                  {/* Brands */}
+                  {item.brand.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {item.brand
+                        .filter((brand) => brand.trim() !== "" && brand.trim() !== ",")
+                        .map((brand, i) => (
+                          <span
+                            key={i}
+                            className="text-xs bg-blue-100 text-blue-700 font-medium px-2 py-1 rounded-md"
+                          >
+                            {brand}
+                          </span>
+                        ))}
                     </div>
                   )}
                 </div>
-                <span className="inline-block w-fit bg-buttonBg text-white text-sm font-medium px-4 py-2 rounded-full mb-4 mt-4">
+
+                {/* Title */}
+                <span className="inline-block bg-buttonBg text-white text-sm font-medium px-4 py-2 rounded-full mb-4">
                   {item.name}
                 </span>
+
+                {/* Description */}
                 <p className="text-textColor text-base leading-relaxed flex-grow">
                   {item.description}
                 </p>
@@ -59,47 +68,28 @@ const Ourservices = () => {
           ))}
         </div>
 
-        <div className="mt-14">
-          <h2 className="text-3xl text-headingColor font-bold">
-            Our products and services
+        {/* Services List */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-headingColor mb-6">
+            Our Products and Services
           </h2>
-          <ul className="space-y-3 mt-5">
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Ture Online UPS
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Off-Line UPS
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              IPS
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              AVR
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Industrial Stablizer
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Inverter
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Battery
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Battery Charger
-            </li>
-            <li className="flex items-center gap-2 text-base md:text-lg font-bold">
-              <Check size={20} className="text-headingColor font-bold" />
-              Solar Inverter
-            </li>
+          <ul className="space-y-3">
+            {[
+              "Ture Online UPS",
+              "Off-Line UPS",
+              "IPS",
+              "AVR",
+              "Industrial Stabilizer",
+              "Inverter",
+              "Battery",
+              "Battery Charger",
+              "Solar Inverter",
+            ].map((service, idx) => (
+              <li key={idx} className="flex items-center gap-2 text-base md:text-lg font-semibold text-headingColor">
+                <Check size={20} className="text-green-600" />
+                {service}
+              </li>
+            ))}
           </ul>
         </div>
       </div>

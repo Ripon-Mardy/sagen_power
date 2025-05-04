@@ -8,7 +8,7 @@ import blog3 from "../../../public/images/Blogs/blog3.jpg";
       image : blog1,
       title: "Power Backup Solutions for Modern Homes",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia arcu eu arcu pretium, in maximus risus scelerisque. Integer aliquam, metus ut dictum congue, arcu nisl cursus magna, eu mollis lorem libero sit amet nisi. Fusce vitae dui non arcu iaculis tincidunt. Donec id urna ac turpis suscipit venenatis non vitae nunc. Aliquam erat volutpat. Curabitur quis vehicula orci. Pellentesque scelerisque sapien ligula, eget hendrerit orci laoreet eget. Nunc ac malesuada elit. Donec non turpis a mi vehicula dignissim.",
+        "Power outages can disrupt your daily life, from halting work to damaging appliances. Modern homes depend on electricity more than ever — for communication, security, and convenience. In this post, we'll explore why power backup is important, the common solutions available, and which might be best for your home.",
       date: "2025-04-05",
     },
     {

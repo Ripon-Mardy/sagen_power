@@ -33,7 +33,7 @@ const serviceData = [
       "Based on the lasted theory and technology of motor running and contro. Powertran inverter a new high performance vector control frequency inverter. through decoupling the motor flux current and torque current. it can achieve high rapid response and high accurate torque control. gain high precision with ore wider range control in speed control and torque control as well.",
     image: Inverter,
     capacity: "",
-    brand: "",
+    brand: [],
   },
   {
     id: "3",
@@ -42,7 +42,7 @@ const serviceData = [
       "TNS series full automatic compensated power voltage stabilizer applicant to when the power network voltage fluctuations or the load current varies, it can keep output voltage in steady state automatically.It has advantages of large capacity, high efficiency, no wave distortion, stable voltage adjustment and suitability. The input voltage, output voltage and power capacity can be customized as your requirements.",
     image: [AutomaticVoltageRegulator1, AutomaticVoltageRegulator2, AutomaticVoltageRegulator3, AutomaticVoltageRegulator4],
     capacity: "650 va - 5000 KVA",
-    brand: "Sako",
+    brand: ["Sako", 'MINGCH'],
   },
   {
     id: "4",
@@ -51,7 +51,7 @@ const serviceData = [
       "Sagen power  deep cycle pdc range is purpose built for those applications which require regular and consistent cycling (charge and dis-charge). Commonly called deep cycling the oversized negative plates and a specialized paste formulation of the pdc can provide constant power for longer periods of time without shortening the life of the battery. typical applications include . Weekend or holiday homes with large electrical loads. Medium solar systems for industrial.",
     image: [Battery1, Battery2],
     capacity: "",
-    brand: "",
+    brand: [],
   },
   {
     id: "5",
@@ -60,7 +60,7 @@ const serviceData = [
       "Sagen Power provides high-quality Solar Power Systems tailored for homes, businesses, and industries. Our systems offer reliable, eco-friendly energy solutions that reduce electricity costs while supporting a greener future. We handle everything from installation to after-sales service, ensuring long-term performance and satisfaction.",
     image: solar,
     capacity: "",
-    brand: "",
+    brand: [],
   },
 ];
 
